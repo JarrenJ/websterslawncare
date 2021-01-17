@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/websterslawncare/static/css/main.daea1e4a.chunk.css",
+    "main.js": "/websterslawncare/static/js/main.864f636a.chunk.js",
+    "main.js.map": "/websterslawncare/static/js/main.864f636a.chunk.js.map",
+    "runtime-main.js": "/websterslawncare/static/js/runtime-main.5feeb767.js",
+    "runtime-main.js.map": "/websterslawncare/static/js/runtime-main.5feeb767.js.map",
+    "static/js/2.ed549021.chunk.js": "/websterslawncare/static/js/2.ed549021.chunk.js",
+    "static/js/2.ed549021.chunk.js.map": "/websterslawncare/static/js/2.ed549021.chunk.js.map",
+    "index.html": "/websterslawncare/index.html",
+    "precache-manifest.f5a34d68befba114bec0210b004ef463.js": "/websterslawncare/precache-manifest.f5a34d68befba114bec0210b004ef463.js",
+    "service-worker.js": "/websterslawncare/service-worker.js",
+    "static/css/main.daea1e4a.chunk.css.map": "/websterslawncare/static/css/main.daea1e4a.chunk.css.map",
+    "static/js/2.ed549021.chunk.js.LICENSE.txt": "/websterslawncare/static/js/2.ed549021.chunk.js.LICENSE.txt",
+    "static/media/logoNoBg.svg": "/websterslawncare/static/media/logoNoBg.5fff11ad.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5feeb767.js",
+    "static/js/2.ed549021.chunk.js",
+    "static/css/main.daea1e4a.chunk.css",
+    "static/js/main.864f636a.chunk.js"
+  ]
+}

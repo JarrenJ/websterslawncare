@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import { HashRouter, Switch, Route } from 'react-router-dom';
 import { lawnServices, landscapeServices, fertilizerServices, snowServices } from './components/pages/Services'
 import About from './components/pages/About';
 import Footer from './components/Footer';
@@ -12,7 +13,7 @@ import Quote from "./components/pages/Quote";
 function App() {
   return (
     <div className="main__container">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />

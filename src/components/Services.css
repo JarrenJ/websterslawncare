@@ -1,0 +1,151 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.service__landing {
+    /*background: url('/images/img-home.jpg') center center/cover no-repeat;*/
+    /*background: url('/images/landingLogo.jpg') center center/cover no-repeat;*/
+    /*background: url('/images/landing.jpg') center center/cover no-repeat;*/
+    background: url('../assets/lawnCard.jpg') center center/cover no-repeat;
+    /*background-size: auto 102%;*/
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+}
+
+.service__landing > h1 {
+    color: #fff;
+    font-size: 70px;
+    margin-top: -40px;
+}
+
+.service__landing > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.service__container {
+    padding: 5rem;
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    /*background: #fff;*/
+}
+
+.service__wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.service__title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.spacer {
+    padding: .25rem;
+}
+
+.service__list__space {
+    padding-bottom: 15px;
+}
+
+.service__context {
+    font-size: 1.2rem;
+}
+
+.service__divider {
+    border: 3px solid #05D73E;
+    border-radius: 10px;
+}
+
+.carousel-status {
+    display: none; /* get rid of carousel status indicator - i.e 1 of 2 */
+}
+
+.service__carousel {
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    font-size: 60px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    white-space: nowrap;
+}
+
+.service__test {
+     height: 45vh;
+    /*height: 650px;*/
+    /*height: 300px;*/
+ }
+
+/* Change what part of image is shown by default  */
+.service__test img {
+    /*height: 100vh;*/
+    /*height: auto;*/
+    /*width: 100%;*/
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    font-size: 80px;
+    transform: translate(-50%, -50%);
+}
+ /* center center/cover no-repeat */
+.service__img__test {
+    background: url('../assets/services/snowCarousel-1.jpg') center center/cover no-repeat;
+    height: 100%;
+}
+
+.service__img {
+    /*max-height: 100%;*/
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    /*height: 300px;*/
+}
+
+.indent {
+    margin-top: 40px;
+    padding-inline-start: 40px;
+}
+
+@media screen and (max-width: 960px) {
+    .testimonial__container {
+        display: none;
+    }
+
+    .testimonial__container__mobile {
+        display: flex;
+        flex-flow: column;
+    }
+}
+
+
+@media only screen and (max-width: 960px){
+    .service__container {
+        padding: 2rem;
+    }
+
+    .service__carousel {
+        white-space: normal;
+    }
+}

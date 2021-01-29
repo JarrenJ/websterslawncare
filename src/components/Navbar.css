@@ -1,5 +1,7 @@
 .navbar {
-  background: #686464;
+  /*background: #686464;*/
+  background: #242424;
+  /*background: rgba(30,30,30,1);*/
   height: 80px;
   display: flex;
   justify-content: center;

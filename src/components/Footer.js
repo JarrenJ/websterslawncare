@@ -1,50 +1,62 @@
 import React from 'react';
-import './Footer.css';
-// import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+
+import './Footer.css';
 
 function Footer() {
+
+  //get current date to use in Copyright section of footer
+  let date = new Date();
+
   return (
-    <Router>
       <div className='footer-container'>
         <section className='footer-subscription'>
-          <p className='footer-subscription-text'>
+          <p className='footer-subscription-heading'>
             Serving Lenawee and Monroe counties
           </p>
+          <p className='footer-subscription-text'><h2><a href='tel:+15179188807'>517.918.8807</a></h2><small><a href='mailto:websterslawncare1@gmail.com'>Websterslawncare1@gmail.com</a></small></p>
         </section>
-        <div class='footer-links'>
+        <div className='footer-links'>
           <div className='footer-link-wrapper'>
-            <div class='footer-link-items'>
+            <div className='footer-link-items'>
               <h2>About Us</h2>
-              <Link to='/About'>Where we started</Link>
+              <Link to='/about'>Where we started</Link>
               <Link to='/testimonials'>Testimonials</Link>
-              <Link to='/contact'>Contact</Link>
+              <Link to='/feedback'>Leave a review</Link>
             </div>
+            {/*<div className='footer-link-items'>*/}
+            {/*  <h2>Services</h2>*/}
+            {/*  <Link to='/services/lawn'>Lawn</Link>*/}
+            {/*  <Link to='/services/landscape'>Landscaping</Link>*/}
+            {/*  <Link to='/services/snow'>Snow Removal</Link>*/}
+            {/*  <Link to='/services/cleanup'>Cleanup</Link>*/}
+            {/*</div>*/}
           </div>
           <div className='footer-link-wrapper'>
-            {/*<div className='footer-link-items'>*/}
-            {/*  <h2>Social Media</h2>*/}
-            {/*  <Link to='/insta'>Instagram</Link>*/}
-            {/*  <a href='https://www.facebook.com/websterslawncare' target='_blank' rel="noopener noreferrer">Facebook</a>*/}
-            {/*  <Link to='/uTube'>Youtube</Link>*/}
-            {/*  <Link to='Twitter'>Twitter</Link>*/}
-            {/*</div>*/}
-            <div class='footer-link-items'>
-              <h1><a href='tel:+15173669247'>517.xxx.xxx</a></h1>
-              {/*<Link to='/'>517.xxx.xxx</Link>*/}
-              {/*<a href='tel:+15173669247'>517.366.9247</a>*/}
+            <div className='footer-link-items'>
+              <h2>Services</h2>
+              <Link to='/services/lawn'>Lawn</Link>
+              <Link to='/services/landscape'>Landscaping</Link>
+              <Link to='/services/snow'>Snow Removal</Link>
+              <Link to='/services/cleanup'>Cleanup</Link>
             </div>
           </div>
+          {/*<div className='footer-link-wrapper'>*/}
+          {/*  <div className='footer-link-items'>*/}
+          {/*    <h2><a href='tel:+15179188807'>517.918.8807</a></h2>*/}
+          {/*    <small><a href='mailto:websterslawncare1@gmail.com'>Websterslawncare1@gmail.com</a></small>*/}
+          {/*  </div>*/}
+
+          {/*</div>*/}
         </div>
-        <section class='social-media'>
-          <div class='social-media-wrap'>
-            <div class='footer-logo'>
+        <section className='social-media'>
+          <div className='social-media-wrap'>
+            <div className='footer-logo'>
               <Link to='/' className='social-logo'>
                 Webster's Lawn Care
               </Link>
             </div>
-            <small class='website-rights'>Webster's Lawn Care LLC © 2020<br/>Licensed & Insured.</small>
+            <small className='website-rights'>Webster's Lawn Care LLC © {date.getFullYear()}<br/>Licensed & Insured.</small>
             <a
                 className='social-icon-link facebook'
                 href='https://www.facebook.com/websterslawncare'
@@ -54,7 +66,7 @@ function Footer() {
             >
               <i className='fab fa-facebook-f'/>
             </a>
-            <div class='social-icons'>
+            {/*<div class='social-icons'>*/}
               {/*<a*/}
               {/*  class='social-icon-link facebook'*/}
               {/*  href='https://www.facebook.com/websterslawncare'*/}
@@ -96,11 +108,10 @@ function Footer() {
               {/*>*/}
               {/*  <i class='fab fa-linkedin' />*/}
               {/*</Link>*/}
-            </div>
+            {/*</div>*/}
           </div>
         </section>
       </div>
-    </Router>
   );
 }
 

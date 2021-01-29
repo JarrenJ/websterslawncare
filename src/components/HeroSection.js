@@ -16,15 +16,15 @@ function HeroSection() {
           buttonSize='btn--large'
           path='/quote'
         >
-          Get Your Free Quote <i className="fas fa-envelope"></i>
+          Get Your Free Quote <i className="fas fa-envelope" />
         </Button>
         <Button
             className='btns'
             buttonStyle='btn--primary'
             buttonSize='btn--large'
-            path='/appointment'
+            path='/schedule'
         >
-            Schedule Appointment <i className="fas fa-calendar-check"></i>
+            Schedule Appointment <i className="fas fa-calendar-check" />
         </Button>
       </div>
     </div>

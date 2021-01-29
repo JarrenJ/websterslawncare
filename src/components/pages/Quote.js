@@ -26,15 +26,15 @@ function Quote() {
             <form onSubmit={sendEmail}>
                 <div className="input-container">
                         <div className="styled-input wide">
-                            <input type="text" name="user_name" required/>
+                            <input type="text" name="user_name" autoComplete="name" required/>
                             <label>Name</label>
                         </div>
                         <div className="styled-input">
-                            <input type="text" name="user_email" required/>
+                            <input type="text" name="user_email" autoComplete="email" required/>
                             <label>Email</label>
                         </div>
                         <div className="styled-input" style={{float:"right"}}>
-                            <input type="text" name="user_phone" />
+                            <input type="text" name="user_phone" autoComplete="tel"/>
                             <label>Phone Number <sup><small>(optional)</small></sup></label>
                         </div>
                         <div className="styled-input wide">

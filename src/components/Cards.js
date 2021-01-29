@@ -2,7 +2,6 @@ import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
 import { Button } from './Button';
-import {Link} from "react-router-dom";
 // import {Link} from "react-router-dom";
 
 function Cards() {
@@ -12,13 +11,13 @@ function Cards() {
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
-            <Link to='/services/lawn'>
+            {/*<Link to='/services/lawn'>*/}
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <CardItem
                       // src='images/lawn-svg.svg'
-                      src='images/lawnCard.jpg'
+                      src='images/lawnServices.jpg'
                       text='Lawn Services'
                       label=''
                       // path='/services/lawn'
@@ -27,10 +26,10 @@ function Cards() {
                   </div>
                   <div className="flip-card-back">
                     <ul style={{listStyleType: 'none'}}>
-                      <li className='space'>Thing 1</li>
-                      <li className='space'>Thing 2</li>
-                      <li className='space'>Thing 3</li>
-                      <li className='space'>Thing 4</li>
+                      {/*<li className='space'>Commercial & Residential</li>*/}
+                      <li className='space'>Custom cutting and stripping</li>
+                      <li className='space'>Trimming of edges and borders</li>
+                      <li className='space'>Clean up all clippings from beds, walkways, and driveways</li>
                     </ul>
                     <br />
                     <Button
@@ -44,8 +43,8 @@ function Cards() {
                   </div>
                 </div>
               </div>
-            </Link>
-            <Link to='/services/landscape'>
+            {/*</Link>*/}
+            {/*<Link to='/services/landscape'>*/}
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -60,10 +59,10 @@ function Cards() {
                   </div>
                   <div className="flip-card-back">
                     <ul style={{listStyleType: 'none'}}>
-                      <li className='space'>Thing 1</li>
-                      <li className='space'>Thing 2</li>
-                      <li className='space'>Thing 3</li>
-                      <li className='space'>Thing 4</li>
+                      <li className='space'>Landscape design</li>
+                      <li className='space'>Reconstruction of existing beds</li>
+                      {/*<li className='space'>Design landscape beds</li>*/}
+                      {/*<li className='space'>Reconstruct landscape beds</li>*/}
                     </ul>
                     <br />
                     <Button
@@ -77,8 +76,8 @@ function Cards() {
                   </div>
                 </div>
               </div>
-            </Link>
-            <Link to='/services/snow'>
+            {/*</Link>*/}
+            {/*<Link to='/services/snow'>*/}
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -93,10 +92,10 @@ function Cards() {
                   </div>
                   <div className="flip-card-back">
                     <ul style={{listStyleType: 'none'}}>
-                      <li className='space'>Thing 1</li>
-                      <li className='space'>Thing 2</li>
-                      <li className='space'>Thing 3</li>
-                      <li className='space'>Thing 4</li>
+                      <li className='space'>Commercial and Residential</li>
+                      <li className='space'>Laying salt</li>
+                      <li className='space'>Clearing walkways</li>
+                      <li className='space'>Clearing parking lots</li>
                     </ul>
                     <br />
                     <Button
@@ -110,7 +109,38 @@ function Cards() {
                   </div>
                 </div>
               </div>
-            </Link>
+            {/*</Link>*/}
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <CardItem
+                      // src='images/snow-svg.svg'
+                      src='images/cleanup.jpg'
+                      text='Fall/Spring Cleanup'
+                      label=''
+                      // path='/services/snow'
+                      //snow
+                  />
+                </div>
+                <div className="flip-card-back">
+                  <ul style={{listStyleType: 'none'}}>
+                    <li className='space'>Leaf pickup</li>
+                    <li className='space'>Sticks and brush cleanup</li>
+                    <li className='space'>Collecting and hauling debris out of landscape beds</li>
+                    {/*<li className='space'>Thing 4</li>*/}
+                  </ul>
+                  <br />
+                  <Button
+                      className='btns'
+                      buttonStyle='btn--invert'
+                      buttonSize='btn--large'
+                      path='/services/cleanup'
+                  >
+                    See More!
+                  </Button>
+                </div>
+              </div>
+            </div>
           </ul>
           {/*<ul className='cards__items'>*/}
           {/*  <CardItem*/}

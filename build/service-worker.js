@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/websterslawncare/precache-manifest.f5a34d68befba114bec0210b004ef463.js"
+  "/websterslawncare/precache-manifest.9a739f2a3bde59a968a4034c55432f8d.js"
 );
 
 self.addEventListener('message', (event) => {

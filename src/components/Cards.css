@@ -1,5 +1,5 @@
 .cards {
-  padding: 4rem;
+  padding-top: 4rem;
   background: #fff;
 }
 
@@ -43,12 +43,7 @@ h1 {
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
-  /*perspective: 1000px;*/
 }
-
-/*.cards__item:hover {*/
-/*  transform: rotateY(180deg);*/
-/*}*/
 
 .cards__item__link {
   display: flex;
@@ -75,20 +70,28 @@ h1 {
 /*  animation-duration: 2s;*/
 /*}*/
 
-/*.cards__item__pic-wrap::after {*/
-/*  content: attr(data-category);*/
-/*  position: absolute;*/
-/*  bottom: 0;*/
-/*  margin-left: 10px;*/
-/*  padding: 6px 8px;*/
-/*  max-width: calc((100%) - 60px);*/
-/*  font-size: 12px;*/
-/*  font-weight: 700;*/
-/*  color: #fff;*/
-/*  !*background-color: #1f98f4;*!*/
-/*  background-color: #05D73E;*/
-/*  box-sizing: border-box;*/
-/*}*/
+
+.cards__item__pic-label {
+  position: relative;
+  width: 100%;
+  padding-top: 67%;
+  overflow: hidden;
+}
+
+.cards__item__pic-label::after {
+  content: attr(data-category);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /*margin-left: 10px;*/
+  padding: 6px 8px;
+  max-width: calc((100%) - 60px);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #05D73E;
+  box-sizing: border-box;
+}
 
 .cards__item__img {
   position: absolute;
@@ -105,7 +108,6 @@ h1 {
   transition: all 0.2s linear;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  /*background-color: #05D73E;*/
   background-color: transparent;
 }
 
@@ -115,9 +117,15 @@ h1 {
 /*  backface-visibility: hidden;*/
 /*}*/
 
+.cards__service__title {
+  text-align: center;
+  padding: .5rem;
+}
+
 .cards__item__info {
   /*padding: 1rem 5rem;*/
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
+  /*padding: 20px 30px 30px;*/
   /*padding: 2rem 3rem;*/
   /*background-color: #05D73E;*/
 }
@@ -132,13 +140,15 @@ h1 {
 
 .cards__item__text_about {
   color: #252e48;
-  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 24px;
-  /*text-align: center;*/
+  text-align: left;
+  max-width: 550px;
   /*white-space: nowrap;*/
 }
 
 .flip-card {
+  display: flex;
   background-color: transparent;
   width: 300px;
   height: 300px;
@@ -150,18 +160,17 @@ h1 {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.6s;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
   /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
 }
 
-/*.flip-card:hover .flip-card-inner {*/
-/*  transform: rotateY(180deg);*/
-/*}*/
-
-/*.flip-card:hover .flip-card:focus .flip-card-inner {*/
-/*  transform: rotateY(180deg);*/
-/*}*/
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  /*transform: rotateY(540deg);*/
+  /*-webkit-transform: rotateY(540deg);*/
+}
 
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -174,6 +183,7 @@ h1 {
 .flip-card-front {
   background-color: #fff;
   color: black;
+  z-index: 2; /*FIXED FOR SAFARI -- PLACES FRONT ABOVE BACK SO WE DONT SEE BACK IMAGE BRIEFLY */
 }
 
 .flip-card-back {
@@ -181,10 +191,12 @@ h1 {
   color: black;
   /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  /*transform: rotateY(-180deg);*/
   display: flex;
   flex-flow: column;
   width: 100%;
-  height: 88%;
+  height: 80%;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
@@ -205,11 +217,12 @@ h1 {
 /*  }*/
 /*}*/
 
-@media (hover: hover){
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-}
+/*@media (hover: hover){*/
+/*  .flip-card:hover .flip-card-inner {*/
+/*    transform: rotateY(180deg);*/
+/*    -webkit-transform: rotateY(180deg);*/
+/*  }*/
+/*}*/
 
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
@@ -217,7 +230,25 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+/*@media only screen and (min-width: 1025px) {*/
+/*  .cards__items {*/
+/*    display: flex;*/
+/*  }*/
+/*}*/
+
+/*@media only screen and (max-width: 1025px) {*/
+/*  .cards__item {*/
+/*    margin-bottom: 2rem;*/
+/*  }*/
+/*}*/
+
+/*@media only screen and (min-width: 1025px) {*/
+/*  .cards__items {*/
+/*    display: flex;*/
+/*  }*/
+/*}*/
+
+@media only screen and (min-width: 1180px) {
   .cards__items {
     display: flex;
   }
